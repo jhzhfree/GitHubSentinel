@@ -54,7 +54,7 @@ class HackerNewsClient:
         os.makedirs(dir_path, exist_ok=True)  # 确保目录存在
         
         file_path = os.path.join(dir_path, f'{hour}.md')  # 定义文件路径
-        with open(file_path, 'w') as file:
+        with open(file_path, 'w', encoding="utf-8") as file:
             file.write(f"# Hacker News Top Stories ({date} {hour}:00)\n\n")
             for idx, story in enumerate(top_stories, start=1):
                 file.write(f"{idx}. [{story['title']}]({story['link']})\n")

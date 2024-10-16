@@ -24,14 +24,14 @@ class ReportGenerator:
         """
         生成 GitHub 项目的报告，并保存为 {original_filename}_report.md。
         """
-        with open(markdown_file_path, 'r') as file:
+        with open(markdown_file_path, 'r', encoding='utf-8') as file:
             markdown_content = file.read()
 
         system_prompt = self.prompts.get("github")
         report = self.llm.generate_report(system_prompt, markdown_content)
         
         report_file_path = os.path.splitext(markdown_file_path)[0] + "_report.md"
-        with open(report_file_path, 'w+') as report_file:
+        with open(report_file_path, 'w+', encoding='utf-8') as report_file:
             report_file.write(report)
 
         LOG.info(f"GitHub 项目报告已保存到 {report_file_path}")
@@ -41,7 +41,7 @@ class ReportGenerator:
         """
         生成 Hacker News 小时主题的报告，并保存为 {original_filename}_topic.md。
         """
-        with open(markdown_file_path, 'r') as file:
+        with open(markdown_file_path, 'r', encoding='utf-8') as file:
             markdown_content = file.read()
 
         system_prompt = self.prompts.get("hacker_news_hours_topic")
@@ -70,7 +70,7 @@ class ReportGenerator:
         
         report = self.llm.generate_report(system_prompt, markdown_content)
         
-        with open(report_file_path, 'w+') as report_file:
+        with open(report_file_path, 'w+', encoding='utf-8') as report_file:
             report_file.write(report)
         
         LOG.info(f"Hacker News 每日汇总报告已保存到 {report_file_path}")
