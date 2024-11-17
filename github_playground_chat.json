@@ -1,0 +1,1437 @@
+[
+  {
+    "createdAt": 1731807724297,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\\n\\n{\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto}"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目最新进展简报：\n\n新增功能：\n1. 提供语言给OpenAI STT API #6926\n2. 删除音频文件中的沉黙，以防止幻觉 #6953\n3. 支持Markdown或HTML格式在界面横幅中 #6908\n4. 提供文件夹为基础的上下文 #6671\n\n主要改进：\n1. 使用pydantic字段作为工具参数描述 #6962\n2. 改进网络搜索功能 #6959\n3. 图像压缩功能 #6848\n4. 集成标记以改善PDF解析 #6844\n5. 支持外部图片URL在聊天补全请求中 #6816\n6. 提供更好的网页搜索 #6985\n\n修复问题：\n1. 模型搜索无法返回预期结果的错误 #6979\n2. 动作在最新版本中无法正常工作的问题 #6976\n3. llama3.2图像未被处理的问题 #6818\n4. MODEL_FILTER_LIST无法按预期工作的问题 #6781"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731807724297,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\\n\\n{\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto}"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目简报：\n\n1）新增功能：\n- 在工具中使用Pydantic字段描述参数说明 #6962\n- 改进网络搜索功能 #6959\n- 提供语言给OpenAI STT API #6926\n- 新增管理员设置，显示或隐藏聊天消息中的引用 #6767\n- 支持Markdown或HTML格式的界面横幅 #6908\n- 图像压缩功能 #6848\n- 增加标记集成，以提供更好的PDF解析 #6844\n- 支持外部图像URL在聊天完成请求中 #6816\n- 提供基于文件夹的上下文 #6671\n\n2）主要改进：\n- 提高网络搜索质量 #6959\n- 移除音频文件中的寂静，以防止幻觉 #6953\n- 使用介词字段描述工具参数说明 #6962\n- 支持更多OpenAI兼容提供商的手动模型列表 #6821\n\n3）修复问题：\n- 修复模型搜索无法返回预期结果的问题 #6979\n- 修复最新版本中动作功能失效的问题 #6976\n- 修复模型搜索在最新版本无法正常工作的问题 #6985\n- 修复了统计聊天中显示令牌使用情况时出现的问题 #6986\n- 修复了白名单模型迁移失败的问题 #6914\n- 修复了部分IP第二个图像未被处理的问题 #6818\n- 修复了MODEL_FILTER_LIST功能无法正常工作的问题 #6781\n- 修复了输入Markdown格式错误的问题 #6580\n- 修复了失败嵌入的通知和处理问题 #6311"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731807903368,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are an expert in summarizing GitHub content"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\\n\\n{\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto}"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目最新进展简报：\n\n新增功能：\n1. 提供语言给OpenAI STT API #6926\n2. 删除音频文件中的沉黙，以防止幻觉 #6953\n3. 支持Markdown或HTML格式在界面横幅中 #6908\n4. 提供文件夹为基础的上下文 #6671\n\n主要改进：\n1. 使用pydantic字段作为工具参数描述 #6962\n2. 改进网络搜索功能 #6959\n3. 图像压缩功能 #6848\n4. 集成标记以改善PDF解析 #6844\n5. 支持外部图片URL在聊天补全请求中 #6816\n6. 提供更好的网页搜索 #6985\n\n修复问题：\n1. 模型搜索无法返回预期结果的错误 #6979\n2. 动作在最新版本中无法正常工作的问题 #6976\n3. llama3.2图像未被处理的问题 #6818\n4. MODEL_FILTER_LIST无法按预期工作的问题 #6781"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\\n\\n{\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto}"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目最新进展简报：\n\n新增功能：\n1. 删除音频文件中的沉黙，以防止幻觉 #6953\n2. 提供语言给OpenAI STT API #6926\n3. 支持Markdown或HTML格式在界面横幅中 #6908\n4. 图像压缩功能 #6848\n5. 支持外部图片URL在聊天补全请求中 #6816\n6. 新的管理员设置，显示或隐藏聊天消息中的引用 #6767\n7. 基于文件夹的上下文 #6671\n\n主要改进：\n1. 使用pydantic字段作为工具参数描述 #6962\n2. 改进网络搜索功能 #6959\n3. 标记集成以改善PDF解析 #6844\n4. 集成手动模型列表，用于几乎兼容OpenAI的提供者 #6821\n5. 支持外部图像URL在聊天完成请求中 #6816\n6. 改进open webui内置使用跟踪/限制功能 #6692\n7. 包含webui userId在完成请求中 #6364\n\n修复问题：\n1. 模型搜索无法返回预期结果 #6979\n2. 动作在最新版本中出现问题 #6976\n3. llama3.2视觉第二图像未被处理的问题 #6818\n4. MODEL_FILTER_LIST不能正常工作的问题 #6781\n5. 输入的markdown不正确的问题 #6580"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731807903368,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\\n\\n{\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto}"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目简报：\n\n1）新增功能：\n- 在工具中使用Pydantic字段描述参数说明 #6962\n- 改进网络搜索功能 #6959\n- 提供语言给OpenAI STT API #6926\n- 新增管理员设置，显示或隐藏聊天消息中的引用 #6767\n- 支持Markdown或HTML格式的界面横幅 #6908\n- 图像压缩功能 #6848\n- 增加标记集成，以提供更好的PDF解析 #6844\n- 支持外部图像URL在聊天完成请求中 #6816\n- 提供基于文件夹的上下文 #6671\n\n2）主要改进：\n- 提高网络搜索质量 #6959\n- 移除音频文件中的寂静，以防止幻觉 #6953\n- 使用介词字段描述工具参数说明 #6962\n- 支持更多OpenAI兼容提供商的手动模型列表 #6821\n\n3）修复问题：\n- 修复模型搜索无法返回预期结果的问题 #6979\n- 修复最新版本中动作功能失效的问题 #6976\n- 修复模型搜索在最新版本无法正常工作的问题 #6985\n- 修复了统计聊天中显示令牌使用情况时出现的问题 #6986\n- 修复了白名单模型迁移失败的问题 #6914\n- 修复了部分IP第二个图像未被处理的问题 #6818\n- 修复了MODEL_FILTER_LIST功能无法正常工作的问题 #6781\n- 修复了输入Markdown格式错误的问题 #6580\n- 修复了失败嵌入的通知和处理问题 #6311"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\\n\\n{\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto}"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目简报：\n\n1）新增功能：\n- 在工具中使用Pydantic字段描述参数说明 #6962\n- 改进网络搜索功能 #6959\n- 提供语言给OpenAI STT API #6926\n- 新增管理员设置，显示或隐藏聊天消息中的引用 #6767\n- 支持Markdown或HTML格式的界面横幅 #6908\n- 图像压缩功能 #6848\n- 增加标记集成，以提供更好的PDF解析 #6844\n- 支持外部图像URL在聊天完成请求中 #6816\n- 提供基于文件夹的上下文 #6671\n- 在完成请求中包含WebUI用户ID #6364\n- 提供通知和处理未能嵌入的功能 #6311\n\n2）主要改进：\n- 提高网络搜索质量 #6959\n- 移除音频文件中的寂静，以防止幻觉 #6953\n- 使用介词字段描述工具参数说明 #6962\n- 支持更多OpenAI兼容提供商的手动模型列表 #6821\n- 新增内置使用跟踪/限制功能 #6692\n\n3）修复问题：\n- 修复模型搜索无法返回预期结果的问题 #6979\n- 修复最新版本中动作功能失效的问题 #6976\n- 修复模型搜索在最新版本无法正常工作的问题 #6985\n- 修复了富文本输入问题 #6973\n- 修复了模型高级设置无法生效的问题 #6985\n- 修复了白名单模型迁移失败的问题 #6914\n- 修复了部分IP第二个图像未被处理的问题 #6818\n- 修复了MODEL_FILTER_LIST功能无法正常工作的问题 #6781\n- 修复了输入Markdown格式错误的问题 #6580"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731808138745,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are an expert in summarizing GitHub content"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\\n\\n{\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto}"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "最新进展简报：\n\n新增功能：\n1. Fluidly stream large external response chunks - Breaks Token Usage Display in Statistical Chat\n2. Enhance almost-OpenAI-compatible providers with manual model list\n3. Support Markdown or HTML formatting in interface banners\n4. Marker integration for better PDF parsing\n5. Support external image URLs in chat completion requests\n6. New admin setting to display or hide citations in chat messages\n7. Folder-based context in v0.5.0\n8. Include webui userId in completions request\n\n主要改进：\n1. Model advanced setting can't take effect\n2. Use Pydantic fields for param descriptions in tools\n3. Better web search\n4. Removing silence from audio files for local OpenAI/Whisper models to prevent hallucinations\n5. Provide language to OpenAI STT API\n6. Support image compression\n7. Enhance notification and handling for failed embeddings\n\n修复问题：\n1. Bug: Model search not returning expected results\n2. Dev: Actions are broken in the latest version\n3. Llama3.2 vision second image not being processed\n4. MODEL_FILTER_LIST not working as expected\n5. Incorrect input markdown\n6. Whitelisted models migration failed\n\n备注：项目还在持续完善和修复中，过去一段时间内也有一些功能和问题修复的进展。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731808138745,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\\n\\n{\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto}"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "**项目简报:**\n\n1. **新增功能:**\n   - 实现从音频文件中去除空白以防止幻觉发生 #6953\n   - 为OpenAI STT API提供语言支持 #6926\n   - 提供了基于文件夹的上下文功能 #6671\n\n2. **主要改进:**\n   - 改进了网络搜索功能 #6959\n   - 支持Markdown或HTML格式的界面横幅 #6908\n   - 提供了更好的PDF解析的标记集成 #6844\n\n3. **修复问题:**\n   - 修复统计聊天中Token使用显示的问题 #6986\n   - 修复了模型搜索未返回预期结果的错误 #6979\n   - 修复了模型高级设置无法生效的问题 #6985\n   - 修复了最新版本中操作功能的故障问题 #6976\n   - 修复了LLAMA3.2视觉第二张图片未被处理的问题 #6818\n   - 修复了MODEL_FILTER_LIST无法按预期工作的问题 #6781\n   - 修复了输入Markdown不正确的问题 #6580"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731809642096,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "你是一个github 内容总结专家，使用GitHub内容生产报表。\n\n任务：\n1.将你收到的内容进行整理：包括基本结构：新增功能、主要改进，修复问题、技术特色。\n2.将1中的整理结果生成一个中文报告，符合以下的参考格式\n\n格式:\n# {repo} 项目进展\n\n## 时间周期：{date}\n\n## 新增功能\n- langchain-box: 添加langchain box包和DocumentLoader\n- 添加嵌入集成测试\n\n## 主要改进\n- 将@root_validator用法升级以与pydantic 2保持一致\n- 将根验证器升级为与pydantic 2兼容\n\n## 修复问题\n- 修复Azure的json模式问题\n- 修复Databricks Vector Search演示笔记本问题\n- 修复Microsoft Azure Cosmos集成测试中的连接字符串问题"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# GitHub 项目进展报告\n\n## 时间周期：过去的一个月\n\n## 新增功能\n- 添加langchain box包和DocumentLoader\n- 添加嵌入集成测试\n- 提供OpenAI STT API的语言支持\n- 新增admin设置，用于在聊天消息中显示或隐藏引文\n- 支持在聊天完成请求中使用外部图像URL\n- 支持Markdown或HTML格式在界面横幅中显示\n- Marker集成以改进PDF解析\n- 为几乎与OpenAI兼容的提供程序手动模型列表\n- 支持在聊天中使用外部图像URL\n- 在聊天中排除静音以防止幻觉\n- 在本地OpenAI/Whisper模型中移除音频文件中的静音\n\n## 主要改进\n- 将@root_validator用法升级以与pydantic 2保持一致\n- 将根验证器升级为与pydantic 2兼容\n- 使用pydantic字段来描述工具中的参数\n- 改进网页搜索\n- 提供基于文件夹的上下文\n- 修复模型搜索未返回预期结果的错误\n\n## 修复问题\n- 修复Azure的JSON模式问题\n- 修复Databricks Vector Search演示笔记本问题\n- 修复Microsoft Azure Cosmos集成测试中的连接字符串问题\n- 修复模型搜索未返回预期结果的问题\n- 修复最新版本中的操作功能故障\n- \"Fluidly stream large external response chunks\" 导致统计聊天中的令牌使用显示问题"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731809642096,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "It seems like there are a variety of issues and enhancements that have been opened in the project repository over the past few days. Some of the recent issues include problems with model search, actions being broken in the latest version, and difficulties with rich text input. \n\nAdditionally, there are enhancement requests such as better web search, support for Markdown or HTML formatting in interface banners, and an improvement to image compression. \n\nIt's important for the development team to prioritize and address these issues and enhancements to ensure the smooth functioning of the project. If you need further assistance with any specific item, feel free to ask!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731809680850,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "你是一个github 内容总结专家，使用GitHub内容生产报表。\n\n任务：\n1.将你收到的内容进行整理：包括基本结构：新增功能、主要改进，修复问题、技术特色。\n2.将1中的整理结果生成一个中文报告，符合以下的参考格式\n\n格式:\n# {repo} 项目进展\n\n## 时间周期：{date}\n\n## 新增功能\n- langchain-box: 添加langchain box包和DocumentLoader\n- 添加嵌入集成测试\n\n## 主要改进\n- 将@root_validator用法升级以与pydantic 2保持一致\n- 将根验证器升级为与pydantic 2兼容\n\n## 修复问题\n- 修复Azure的json模式问题\n- 修复Databricks Vector Search演示笔记本问题\n- 修复Microsoft Azure Cosmos集成测试中的连接字符串问题"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\\n\\n{\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto}"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# 项目进展报告\n\n## 时间周期：最近一个月\n\n## 新增功能\n- Fluidly stream large external response chunks\n- Enh: use pydantic fields for param descriptions in tools\n- Enh: better web search\n- Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations\n- Enh: Provide language to OpenAI STT API\n- Feat: New admin setting to display or hide citations in chat messages\n- V0.5.0 Feat: folder-based context\n- Feat: include webui userId in completions request\n- Enh: Notification and Handling for Failed Embeddings\n\n## 主要改进\n- Enh: marker integration for better pdf parsing\n- Enh: manual model list for almost-OpenAI-compatible providers\n- Enh: support Markdown or HTML formatting in interface banners\n- Enh: image compression\n- Enh: support external image urls in chat completion requests\n- Enh: open webui built-in usage tracking/limit\n- Enh: pip open-webui[min] installation\n\n## 修复问题\n- Bug: model search not returning expected results\n- Bug: model advancd setting can't take effect\n- Dev: actions are broken in latest version\n- [dev-branch] whitelisted models migration failed\n- Issue: llama3.2 vision second image not being processed\n- Issue: rich text input\n- Issue: MODEL_FILTER_LIST not working as expected\n- Issue/enh: incorrect input markdown"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731809680850,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\\n\\n{\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto}"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "**项目简报**\n\n1. 新增功能：\n   - 支持 Markdown 或 HTML 格式的界面横幅 #6908\n   - 图片压缩功能 #6848\n   - 提供语言给 OpenAI STT API #6926\n   - 新的管理员设置，显示或隐藏聊天消息中的引用 #6767\n   - 基于文件夹的上下文功能 #6671\n\n2. 主要改进：\n   - 使用 Pydantic 字段描述工具中的参数说明 #6962\n   - 改进网络搜索功能 #6959\n\n3. 修复问题：\n   - 添加同类项合并，使功能列表更清晰并易于阅读。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731809738901,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "你是一个github 内容总结专家，使用GitHub内容生产中文报表。\n\n任务：\n1.将你收到的内容进行整理：包括基本结构：新增功能、主要改进，修复问题、技术特色。\n2.将1中的整理结果生成一个中文报告，符合以下的参考格式\n\n格式:\n# {repo} 项目进展\n\n## 时间周期：{date}\n\n## 新增功能\n- langchain-box: 添加langchain box包和DocumentLoader\n- 添加嵌入集成测试\n\n## 主要改进\n- 将@root_validator用法升级以与pydantic 2保持一致\n- 将根验证器升级为与pydantic 2兼容\n\n## 修复问题\n- 修复Azure的json模式问题\n- 修复Databricks Vector Search演示笔记本问题\n- 修复Microsoft Azure Cosmos集成测试中的连接字符串问题"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\\n\\n{\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto}"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# 项目进展报告\n\n## 时间周期：最近一个月\n\n## 新增功能\n- Fluidly stream large external response chunks\n- Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations\n- Provide language to OpenAI STT API\n- Marker integration for better PDF parsing\n- Manual model list for almost-OpenAI-compatible providers\n- Support external image URLs in chat completion requests\n- New admin setting to display or hide citations in chat messages\n- Open webui built-in usage tracking/limit\n- Folder-based context\n\n## 主要改进\n- Upgrade @root_validator usage to be consistent with pydantic 2\n- Whitelisted models migration failed\n- Use pydantic fields for param descriptions in tools\n\n## 修复问题\n- Breaks Token Usage Display in Statistical Chat\n- Model advanced setting can't take effect\n- Model search not returning expected results\n- Actions are broken in the latest version\n- Rich text input issue\n- Azure: JSON schema issue\n- Databricks Vector Search demo notebook issue\n- Microsoft Azure Cosmos integration test connection string issue\n- MODEL_FILTER_LIST not working as expected\n- llama3.2 vision second image not being processed\n- Incorrect input markdown in the interface."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731809738901,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\\n\\n{\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto}"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "**项目简报**\n\n**新增功能:**\n1. 提供OpenAI STT API的语言支持\n2. 在聊天完成请求中支持外部图像URL\n3. 新的管理员设置，用于在聊天消息中显示或隐藏引文\n4. 基于文件夹的上下文（v0.5.0版本）\n5. 支持Markdown或HTML格式的接口横幅\n6. 增加WebUI用户ID到完成请求中\n\n**主要改进:**\n1. 大型外部响应块的流动性，用于本地OpenAI/Whisper模型的音频文件中去除静默以防止幻觉\n2. 对音频文件中的沉默进行去除，以防止幻觉\n3. 提供更好的网络搜索\n4. 提供更好的PDF解析标记集成\n5. 支持几乎与OpenAI兼容的提供者的手动模型列表\n6. 图像压缩\n7. 提供更好的网页UI上下文跟踪/限制\n8. 提供通知和处理失败的嵌入\n\n**修复问题:**\n1. \"Statistical Chat\"中的Token使用显示功能受到干扰\n2. Model搜索未返回预期结果\n3. Action在最新版本中失效\n4. 富文本输入问题\n5. MODEL_FILTER_LIST未按预期工作\n6. \"llama3.2 vision\"第二幅图像未被处理\n7. 白名单模型迁移失败\n8. 输入Markdown格式不正确\n\n**注：**\n- 新功能包括语言支持、外部图像URL支持、引文显示/隐藏设置、文件夹上下文等\n- 主要改进包括流动性流，音频文件处理，网络搜索改进等\n- 问题修复包括显示问题、返回结果问题、功能失效等"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731809934146,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "你是一个热爱开源社区的技术爱好者，经常关注 GitHub 上热门开源项目的进展。\n\n任务：\n1.将你收到的内容进行整理：包括基本结构：新增功能、主要改进，修复问题、技术特色。\n2.将1中的整理结果生成一个中文报告，符合以下的参考格式\n\n格式:\n# {repo} 项目进展\n\n## 时间周期：{date}\n\n## 新增功能\n- langchain-box: 添加langchain box包和DocumentLoader\n- 添加嵌入集成测试\n\n## 主要改进\n- 将@root_validator用法升级以与pydantic 2保持一致\n- 将根验证器升级为与pydantic 2兼容\n\n## 修复问题\n- 修复Azure的json模式问题\n- 修复Databricks Vector Search演示笔记本问题\n- 修复Microsoft Azure Cosmos集成测试中的连接字符串问题\n\n参考样例："
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# 项目进展报告\n\n## 时间周期：最近一个月\n\n## 新增功能\n- Fluidly stream large external response chunks\n- Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations\n- Provide language to OpenAI STT API\n- Support external image urls in chat completion requests\n- New admin setting to display or hide citations in chat messages\n- Folder-based context\n\n## 主要改进\n- Model advanced setting can't take effect\n- Use pydantic fields for param descriptions in tools\n- Better web search\n- Support Markdown or HTML formatting in interface banners\n- Image compression\n- Marker integration for better pdf parsing\n- Manual model list for almost-OpenAI-compatible providers\n- Notification and Handling for Failed Embeddings\n\n## 修复问题\n- \"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat\n- Bug: model search not returning expected results\n- Actions are broken in latest version\n- Rich text input issue\n- LABEL_FILTER_LIST not working as expected\n- Second image not being processed in llama3.2 vision\n- Incorrect input markdown\n- Whitelisted models migration failed\n- Support Markdown or HTML formatting in interface banners\n- Dev-branch whitelisted models migration failed"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731809934146,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目简报：\n\n新增功能：\n1. 新增功能：Removed Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations (#6953)\n2. 新增功能：Provide language to OpenAI STT API (#6926)\n3. 新增功能：Support Markdown or HTML formatting in interface banners (#6908)\n4. 新增功能：Image compression (#6848)\n5. 新增功能：Marker integration for better PDF parsing (#6844)\n6. 新增功能：Manual model list for almost-OpenAI-compatible providers (#6821)\n7. 新增功能：Support external image URLs in chat completion requests (#6816)\n8. 新增功能：New admin setting to display or hide citations in chat messages (#6767)\n9. 新增功能：Folder-based context (#6671)\n10. 新增功能：Include webUI userId in completions request (#6364)\n11. 新增功能：Notification and Handling for Failed Embeddings (#6311)\n\n主要改进：\n1. 主要改进：Use pydantic fields for param descriptions in tools (#6962)\n2. 主要改进：Better web search (#6959)\n3. 主要改进：Enhancement of the open-webui slim docker image (#6378)\n4. 主要改进：PIP open-webui[min] installation (#6369)\n\n修复问题：\n1. 修复问题：Bug in model search not returning expected results (#6979)\n2. 修复问题：Actions are broken in the latest version (#6976)\n3. 修复问题：Llama3.2 vision second image not being processed (#6818)\n4. 修复问题：MODEL_FILTER_LIST not working as expected (#6781)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731810000092,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "你是一个热爱开源社区的技术爱好者，经常关注 GitHub 上热门开源项目的进展。\n\n任务：\n1.将你收到的内容进行整理：包括基本结构：新增功能、主要改进，修复问题、技术特色。\n2.将1中的整理结果生成一个[中文]报告，符合以下的参考格式\n\n格式:\n# {repo} 项目进展\n\n## 时间周期：{date}\n\n## 新增功能\n- langchain-box: 添加langchain box包和DocumentLoader\n- 添加嵌入集成测试\n\n## 主要改进\n- 将@root_validator用法升级以与pydantic 2保持一致\n- 将根验证器升级为与pydantic 2兼容\n\n## 修复问题\n- 修复Azure的json模式问题\n- 修复Databricks Vector Search演示笔记本问题\n- 修复Microsoft Azure Cosmos集成测试中的连接字符串问题\n\n参考样例："
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# 项目进展报告\n\n## 时间周期：最近一个月\n\n## 新增功能\n- Fluidly stream large external response chunks\n- Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations\n- Provide language to OpenAI STT API\n- Support external image urls in chat completion requests\n- New admin setting to display or hide citations in chat messages\n- Folder-based context\n\n## 主要改进\n- Model advanced setting can't take effect\n- Use pydantic fields for param descriptions in tools\n- Better web search\n- Support Markdown or HTML formatting in interface banners\n- Image compression\n- Marker integration for better pdf parsing\n- Manual model list for almost-OpenAI-compatible providers\n- Notification and Handling for Failed Embeddings\n\n## 修复问题\n- \"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat\n- Bug: model search not returning expected results\n- Actions are broken in latest version\n- Rich text input issue\n- LABEL_FILTER_LIST not working as expected\n- Second image not being processed in llama3.2 vision\n- Incorrect input markdown\n- Whitelisted models migration failed\n- Support Markdown or HTML formatting in interface banners\n- Dev-branch whitelisted models migration failed"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# 项目进展报告\n\n## 时间周期：最近一个月\n\n## 新增功能\n- Fluidly stream large external response chunks\n- Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations\n- Provide language to OpenAI STT API\n- Support external image urls in chat completion requests\n- New admin setting to display or hide citations in chat messages\n- Folder-based context\n- Include webui userId in completions request\n\n## 主要改进\n- Model advanced setting can't take effect\n- Use pydantic fields for param descriptions in tools\n- Better web search\n- Support Markdown or HTML formatting in interface banners\n- Image compression\n- Marker integration for better pdf parsing\n- Manual model list for almost-OpenAI-compatible providers\n- Notification and Handling for Failed Embeddings\n\n## 修复问题\n- \"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat\n- Bug: model search not returning expected results\n- Actions are broken in the latest version\n- Rich text input issue\n- Whitelisted models migration failed in dev-branch\n- Second image not being processed in llama3.2 vision\n- Incorrect input markdown\n- MODEL_FILTER_LIST not working as expected"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731810000092,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目简报：\n\n新增功能：\n1. 新增功能：Removed Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations (#6953)\n2. 新增功能：Provide language to OpenAI STT API (#6926)\n3. 新增功能：Support Markdown or HTML formatting in interface banners (#6908)\n4. 新增功能：Image compression (#6848)\n5. 新增功能：Marker integration for better PDF parsing (#6844)\n6. 新增功能：Manual model list for almost-OpenAI-compatible providers (#6821)\n7. 新增功能：Support external image URLs in chat completion requests (#6816)\n8. 新增功能：New admin setting to display or hide citations in chat messages (#6767)\n9. 新增功能：Folder-based context (#6671)\n10. 新增功能：Include webUI userId in completions request (#6364)\n11. 新增功能：Notification and Handling for Failed Embeddings (#6311)\n\n主要改进：\n1. 主要改进：Use pydantic fields for param descriptions in tools (#6962)\n2. 主要改进：Better web search (#6959)\n3. 主要改进：Enhancement of the open-webui slim docker image (#6378)\n4. 主要改进：PIP open-webui[min] installation (#6369)\n\n修复问题：\n1. 修复问题：Bug in model search not returning expected results (#6979)\n2. 修复问题：Actions are broken in the latest version (#6976)\n3. 修复问题：Llama3.2 vision second image not being processed (#6818)\n4. 修复问题：MODEL_FILTER_LIST not working as expected (#6781)"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目简报：\n\n新增功能：\n1. Removed Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations (#6953)\n2. Provide language to OpenAI STT API (#6926)\n3. Support Markdown or HTML formatting in interface banners (#6908)\n4. Image compression (#6848)\n5. Marker integration for better PDF parsing (#6844)\n6. Manual model list for almost-OpenAI-compatible providers (#6821)\n7. Support external image URLs in chat completion requests (#6816)\n8. New admin setting to display or hide citations in chat messages (#6767)\n9. Folder-based context (#6671)\n10. Include webUI userId in completions request (#6364)\n11. Notification and Handling for Failed Embeddings (#6311)\n\n主要改进：\n1. Use pydantic fields for param descriptions in tools (#6962)\n2. Better web search (#6959)\n\n修复问题：\n1. Bug: model search not returning expected results (#6979)\n2. Dev: actions are broken in the latest version (#6976)\n3. Llama3.2 vision second image not being processed (#6818)\n4. MODEL_FILTER_LIST not working as expected (#6781)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731810360958,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "你是一个热爱开源社区的技术爱好者，经常关注 GitHub 上热门开源项目的进展。\n\n任务：\n1.将你收到的内容进行整理：包括基本结构：新增功能、主要改进，修复问题、技术特色。\n2.将1中的整理结果生成一个[中文]报告，符合以下的参考格式\n\n格式要求：\n总结内容尽量使用中文。\n\n参考样例:\n# {repo} 项目进展\n\n## 时间周期：{date}\n\n## 新增功能\n- langchain-box: 添加langchain box包和DocumentLoader\n- 添加嵌入集成测试\n\n## 主要改进\n- 将@root_validator用法升级以与pydantic 2保持一致\n- 将根验证器升级为与pydantic 2兼容\n\n## 修复问题\n- 修复Azure的json模式问题\n- 修复Databricks Vector Search演示笔记本问题\n- 修复Microsoft Azure Cosmos集成测试中的连接字符串问题\n"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# 项目进展报告\n\n## 时间周期：最近一个月\n\n## 新增功能\n- Fluidly stream large external response chunks\n- Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations\n- Provide language to OpenAI STT API\n- Support external image urls in chat completion requests\n- New admin setting to display or hide citations in chat messages\n- Folder-based context\n\n## 主要改进\n- Model advanced setting can't take effect\n- Use pydantic fields for param descriptions in tools\n- Better web search\n- Support Markdown or HTML formatting in interface banners\n- Image compression\n- Marker integration for better pdf parsing\n- Manual model list for almost-OpenAI-compatible providers\n- Notification and Handling for Failed Embeddings\n\n## 修复问题\n- \"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat\n- Bug: model search not returning expected results\n- Actions are broken in latest version\n- Rich text input issue\n- LABEL_FILTER_LIST not working as expected\n- Second image not being processed in llama3.2 vision\n- Incorrect input markdown\n- Whitelisted models migration failed\n- Support Markdown or HTML formatting in interface banners\n- Dev-branch whitelisted models migration failed"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# 项目进展报告\n\n## 时间周期：最近一个月\n\n## 新增功能\n- Fluidly stream large external response chunks\n- Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations\n- Provide language to OpenAI STT API\n- Support external image urls in chat completion requests\n- New admin setting to display or hide citations in chat messages\n- Folder-based context\n- Include webui userId in completions request\n\n## 主要改进\n- Model advanced setting can't take effect\n- Use pydantic fields for param descriptions in tools\n- Better web search\n- Support Markdown or HTML formatting in interface banners\n- Image compression\n- Marker integration for better pdf parsing\n- Manual model list for almost-OpenAI-compatible providers\n- Notification and Handling for Failed Embeddings\n\n## 修复问题\n- \"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat\n- Bug: model search not returning expected results\n- Actions are broken in the latest version\n- Rich text input issue\n- Whitelisted models migration failed in dev-branch\n- Second image not being processed in llama3.2 vision\n- Incorrect input markdown\n- MODEL_FILTER_LIST not working as expected"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# 项目进展报告\n\n## 时间周期：最近一个月\n\n## 新增功能\n- Fluidly stream large external response chunks\n- Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations\n- Provide language to OpenAI STT API\n- Support external image URLs in chat completion requests\n- New admin setting to display or hide citations in chat messages\n- Folder-based context\n- Include webui userId in completions request\n\n## 主要改进\n- Model advanced setting can't take effect\n- Use pydantic fields for param descriptions in tools\n- Better web search\n- Support Markdown or HTML formatting in interface banners\n- Image compression\n- Marker integration for better PDF parsing\n- Manual model list for almost-OpenAI-compatible providers\n- Notification and Handling for Failed Embeddings\n\n## 修复问题\n- \"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat\n- Bug: model search not returning expected results\n- Actions are broken in the latest version\n- Rich text input issue\n- Whitelisted models migration failed in dev-branch\n- Second image not being processed in llama3.2 vision\n- Incorrect input markdown\n- MODEL_FILTER_LIST not working as expected"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731810360958,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目简报：\n\n新增功能：\n1. 新增功能：Removed Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations (#6953)\n2. 新增功能：Provide language to OpenAI STT API (#6926)\n3. 新增功能：Support Markdown or HTML formatting in interface banners (#6908)\n4. 新增功能：Image compression (#6848)\n5. 新增功能：Marker integration for better PDF parsing (#6844)\n6. 新增功能：Manual model list for almost-OpenAI-compatible providers (#6821)\n7. 新增功能：Support external image URLs in chat completion requests (#6816)\n8. 新增功能：New admin setting to display or hide citations in chat messages (#6767)\n9. 新增功能：Folder-based context (#6671)\n10. 新增功能：Include webUI userId in completions request (#6364)\n11. 新增功能：Notification and Handling for Failed Embeddings (#6311)\n\n主要改进：\n1. 主要改进：Use pydantic fields for param descriptions in tools (#6962)\n2. 主要改进：Better web search (#6959)\n3. 主要改进：Enhancement of the open-webui slim docker image (#6378)\n4. 主要改进：PIP open-webui[min] installation (#6369)\n\n修复问题：\n1. 修复问题：Bug in model search not returning expected results (#6979)\n2. 修复问题：Actions are broken in the latest version (#6976)\n3. 修复问题：Llama3.2 vision second image not being processed (#6818)\n4. 修复问题：MODEL_FILTER_LIST not working as expected (#6781)"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目简报：\n\n新增功能：\n1. Removed Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations (#6953)\n2. Provide language to OpenAI STT API (#6926)\n3. Support Markdown or HTML formatting in interface banners (#6908)\n4. Image compression (#6848)\n5. Marker integration for better PDF parsing (#6844)\n6. Manual model list for almost-OpenAI-compatible providers (#6821)\n7. Support external image URLs in chat completion requests (#6816)\n8. New admin setting to display or hide citations in chat messages (#6767)\n9. Folder-based context (#6671)\n10. Include webUI userId in completions request (#6364)\n11. Notification and Handling for Failed Embeddings (#6311)\n\n主要改进：\n1. Use pydantic fields for param descriptions in tools (#6962)\n2. Better web search (#6959)\n\n修复问题：\n1. Bug: model search not returning expected results (#6979)\n2. Dev: actions are broken in the latest version (#6976)\n3. Llama3.2 vision second image not being processed (#6818)\n4. MODEL_FILTER_LIST not working as expected (#6781)"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目简报：\n\n新增功能：\n1. Removed Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations (#6953)\n2. Provide language to OpenAI STT API (#6926)\n3. Support Markdown or HTML formatting in interface banners (#6908)\n4. Image compression (#6848)\n5. Marker integration for better PDF parsing (#6844)\n6. Manual model list for almost-OpenAI-compatible providers (#6821)\n7. Support external image URLs in chat completion requests (#6816)\n8. New admin setting to display or hide citations in chat messages (#6767)\n9. Folder-based context (#6671)\n10. Include webUI userId in completions request (#6364)\n\n主要改进：\n1. Use pydantic fields for param descriptions in tools (#6962)\n2. Better web search (#6959)\n3. Open webUI built-in usage tracking/limit (#6692)\n\n修复问题：\n1. Bug: model search not returning expected results (#6979)\n2. Dev: actions are broken in the latest version (#6976)\n3. Llama3.2 vision second image not being processed (#6818)\n4. MODEL_FILTER_LIST not working as expected (#6781)\n5. Incorrect input markdown (#6580)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731810500781,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "你是一个热爱开源社区的技术爱好者，经常关注 GitHub 上热门开源项目的进展。\n\n任务：\n1.将你收到的内容进行整理：包括基本结构：新增功能、主要改进，修复问题、技术特色。\n2.将1中的整理结果生成一个[中文]报告，符合以下的参考格式\n\n要求：\n接收内容如果是英文请帮助翻译成中文。\n\n参考样例:\n# {repo} 项目进展\n\n## 时间周期：{date}\n\n## 新增功能\n- langchain-box: 添加langchain box包和DocumentLoader\n- 添加嵌入集成测试\n\n## 主要改进\n- 将@root_validator用法升级以与pydantic 2保持一致\n- 将根验证器升级为与pydantic 2兼容\n\n## 修复问题\n- 修复Azure的json模式问题\n- 修复Databricks Vector Search演示笔记本问题\n- 修复Microsoft Azure Cosmos集成测试中的连接字符串问题\n"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# 项目进展报告\n\n## 时间周期：最近一个月\n\n## 新增功能\n- Fluidly stream large external response chunks\n- Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations\n- Provide language to OpenAI STT API\n- Support external image urls in chat completion requests\n- New admin setting to display or hide citations in chat messages\n- Folder-based context\n\n## 主要改进\n- Model advanced setting can't take effect\n- Use pydantic fields for param descriptions in tools\n- Better web search\n- Support Markdown or HTML formatting in interface banners\n- Image compression\n- Marker integration for better pdf parsing\n- Manual model list for almost-OpenAI-compatible providers\n- Notification and Handling for Failed Embeddings\n\n## 修复问题\n- \"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat\n- Bug: model search not returning expected results\n- Actions are broken in latest version\n- Rich text input issue\n- LABEL_FILTER_LIST not working as expected\n- Second image not being processed in llama3.2 vision\n- Incorrect input markdown\n- Whitelisted models migration failed\n- Support Markdown or HTML formatting in interface banners\n- Dev-branch whitelisted models migration failed"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# 项目进展报告\n\n## 时间周期：最近一个月\n\n## 新增功能\n- Fluidly stream large external response chunks\n- Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations\n- Provide language to OpenAI STT API\n- Support external image urls in chat completion requests\n- New admin setting to display or hide citations in chat messages\n- Folder-based context\n- Include webui userId in completions request\n\n## 主要改进\n- Model advanced setting can't take effect\n- Use pydantic fields for param descriptions in tools\n- Better web search\n- Support Markdown or HTML formatting in interface banners\n- Image compression\n- Marker integration for better pdf parsing\n- Manual model list for almost-OpenAI-compatible providers\n- Notification and Handling for Failed Embeddings\n\n## 修复问题\n- \"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat\n- Bug: model search not returning expected results\n- Actions are broken in the latest version\n- Rich text input issue\n- Whitelisted models migration failed in dev-branch\n- Second image not being processed in llama3.2 vision\n- Incorrect input markdown\n- MODEL_FILTER_LIST not working as expected"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# 项目进展报告\n\n## 时间周期：最近一个月\n\n## 新增功能\n- Fluidly stream large external response chunks\n- Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations\n- Provide language to OpenAI STT API\n- Support external image URLs in chat completion requests\n- New admin setting to display or hide citations in chat messages\n- Folder-based context\n- Include webui userId in completions request\n\n## 主要改进\n- Model advanced setting can't take effect\n- Use pydantic fields for param descriptions in tools\n- Better web search\n- Support Markdown or HTML formatting in interface banners\n- Image compression\n- Marker integration for better PDF parsing\n- Manual model list for almost-OpenAI-compatible providers\n- Notification and Handling for Failed Embeddings\n\n## 修复问题\n- \"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat\n- Bug: model search not returning expected results\n- Actions are broken in the latest version\n- Rich text input issue\n- Whitelisted models migration failed in dev-branch\n- Second image not being processed in llama3.2 vision\n- Incorrect input markdown\n- MODEL_FILTER_LIST not working as expected"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# 项目进展报告\n\n## 时间周期：最近一个月\n\n## 新增功能\n- Fluidly stream large external response chunks\n- Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations\n- Provide language to OpenAI STT API\n- Support external image URLs in chat completion requests\n- New admin setting to display or hide citations in chat messages\n- Folder-based context\n- Include webui userId in completions request\n\n## 主要改进\n- Model advanced setting can't take effect\n- Use pydantic fields for param descriptions in tools\n- Better web search\n- Support Markdown or HTML formatting in interface banners\n- Image compression\n- Marker integration for better PDF parsing\n- Manual model list for almost-OpenAI-compatible providers\n- Notification and Handling for Failed Embeddings\n\n## 修复问题\n- \"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat\n- Bug: model search not returning expected results\n- Actions are broken in the latest version\n- Rich text input issue\n- Whitelisted models migration failed in dev-branch\n- Second image not being processed in llama3.2 vision\n- Incorrect input markdown\n- MODEL_FILTER_LIST not working as expected"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731810500781,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目简报：\n\n新增功能：\n1. 新增功能：Removed Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations (#6953)\n2. 新增功能：Provide language to OpenAI STT API (#6926)\n3. 新增功能：Support Markdown or HTML formatting in interface banners (#6908)\n4. 新增功能：Image compression (#6848)\n5. 新增功能：Marker integration for better PDF parsing (#6844)\n6. 新增功能：Manual model list for almost-OpenAI-compatible providers (#6821)\n7. 新增功能：Support external image URLs in chat completion requests (#6816)\n8. 新增功能：New admin setting to display or hide citations in chat messages (#6767)\n9. 新增功能：Folder-based context (#6671)\n10. 新增功能：Include webUI userId in completions request (#6364)\n11. 新增功能：Notification and Handling for Failed Embeddings (#6311)\n\n主要改进：\n1. 主要改进：Use pydantic fields for param descriptions in tools (#6962)\n2. 主要改进：Better web search (#6959)\n3. 主要改进：Enhancement of the open-webui slim docker image (#6378)\n4. 主要改进：PIP open-webui[min] installation (#6369)\n\n修复问题：\n1. 修复问题：Bug in model search not returning expected results (#6979)\n2. 修复问题：Actions are broken in the latest version (#6976)\n3. 修复问题：Llama3.2 vision second image not being processed (#6818)\n4. 修复问题：MODEL_FILTER_LIST not working as expected (#6781)"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目简报：\n\n新增功能：\n1. Removed Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations (#6953)\n2. Provide language to OpenAI STT API (#6926)\n3. Support Markdown or HTML formatting in interface banners (#6908)\n4. Image compression (#6848)\n5. Marker integration for better PDF parsing (#6844)\n6. Manual model list for almost-OpenAI-compatible providers (#6821)\n7. Support external image URLs in chat completion requests (#6816)\n8. New admin setting to display or hide citations in chat messages (#6767)\n9. Folder-based context (#6671)\n10. Include webUI userId in completions request (#6364)\n11. Notification and Handling for Failed Embeddings (#6311)\n\n主要改进：\n1. Use pydantic fields for param descriptions in tools (#6962)\n2. Better web search (#6959)\n\n修复问题：\n1. Bug: model search not returning expected results (#6979)\n2. Dev: actions are broken in the latest version (#6976)\n3. Llama3.2 vision second image not being processed (#6818)\n4. MODEL_FILTER_LIST not working as expected (#6781)"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目简报：\n\n新增功能：\n1. Removed Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations (#6953)\n2. Provide language to OpenAI STT API (#6926)\n3. Support Markdown or HTML formatting in interface banners (#6908)\n4. Image compression (#6848)\n5. Marker integration for better PDF parsing (#6844)\n6. Manual model list for almost-OpenAI-compatible providers (#6821)\n7. Support external image URLs in chat completion requests (#6816)\n8. New admin setting to display or hide citations in chat messages (#6767)\n9. Folder-based context (#6671)\n10. Include webUI userId in completions request (#6364)\n\n主要改进：\n1. Use pydantic fields for param descriptions in tools (#6962)\n2. Better web search (#6959)\n3. Open webUI built-in usage tracking/limit (#6692)\n\n修复问题：\n1. Bug: model search not returning expected results (#6979)\n2. Dev: actions are broken in the latest version (#6976)\n3. Llama3.2 vision second image not being processed (#6818)\n4. MODEL_FILTER_LIST not working as expected (#6781)\n5. Incorrect input markdown (#6580)"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "项目简报：\n\n新增功能：\n1. Removed Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations (#6953)\n2. Provide language to OpenAI STT API (#6926)\n3. Support Markdown or HTML formatting in interface banners (#6908)\n4. Image compression (#6848)\n5. Marker integration for better PDF parsing (#6844)\n6. Manual model list for almost-OpenAI-compatible providers (#6821)\n7. Support external image URLs in chat completion requests (#6816)\n8. New admin setting to display or hide citations in chat messages (#6767)\n9. Folder-based context (#6671)\n10. Include webUI userId in completions request (#6364)\n\n主要改进：\n1. Use pydantic fields for param descriptions in tools (#6962)\n2. Better web search (#6959)\n3. Open webui built-in usage tracking/limit (#6692)\n4. Notification and handling for failed embeddings (#6311)\n\n修复问题：\n1. Bug: model search not returning expected results (#6979)\n2. Dev: actions are broken in the latest version (#6976)\n3. Llama3.2 vision second image not being processed (#6818)\n4. MODEL_FILTER_LIST not working as expected (#6781)\n5. Incorrect input markdown (#6580)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731811003824,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "你是一个热爱开源社区的技术爱好者，经常关注 GitHub 上热门开源项目的进展。\n\n任务：\n1. 将你收到的内容进行整理，包括以下基本结构：新增功能、主要改进、修复问题、技术特色。\n2.如果收到的内容是英文，必须将其翻译为中文。\n3.将整理结果生成一个[中文]报告，格式参考以下样例：\n\n参考样例:\n# {repo} 项目进展\n\n## 时间周期：{date}\n\n## 新增功能\n- {功能1}\n- {功能2}\n\n## 主要改进\n- {改进1}\n- {改进2}\n\n## 修复问题\n- {问题1}\n- {问题2}\n\n## 技术特色\n- {特色1}\n- {特色2}"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "# 项目最新进展\n\n## 新增功能\n- 模型高级设置无法生效 #6985\n- 使用 pydantic 字段为工具参数描述 #6962\n- 更好的网络搜索 #6959\n- 提供 OpenAI STT API 语言支持 #6926\n- 支持 Markdown 或 HTML 格式化界面横幅 #6908\n- 图像压缩 #6848\n- 支持更好的 PDF 解析的标记集成 #6844\n- 几乎兼容 OpenAI 的提供商的手动模型列表 #6821\n- 支持聊天完成请求中的外部图像 URL #6816\n- 新的管理员设置用于显示或隐藏聊天消息中的引文 #6767\n- 文件夹为基础的上下文 #6671\n- 在完成请求中包括 webui 用户 ID #6364\n- 失败嵌入的通知和处理 #6311\n\n## 主要改进\n- 移除音频文件中的静音，避免产生幻觉 #6953\n- 使用更好的 web 搜索 #6959\n- 增加标记集成以改进 PDF 解析 #6844\n- 详细了解白名单模型迁移失败 #6914\n- 添加新的管理员设置以显示或隐藏聊天消息中的引文 #6767\n\n## 修复问题\n- 统计聊天中“Fluidly stream large external response chunks”破坏了令牌使用显示 #6986\n- 模型搜索未返回预期结果的错误 #6979\n- 最新版本中操作受损 #6976\n- llama3.2 vision 第二图像未被处理 #6818\n- MODEL_FILTER_LIST 未按预期工作 #6781\n- 不正确的输入 Markdown #6580"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "createdAt": 1731811003824,
+    "modelName": "gpt-3.5-turbo-0125",
+    "modelParams": {
+      "bestOf": 1,
+      "frequencyPenalty": 0,
+      "presencePenalty": 0,
+      "maxTokens": 2048,
+      "temperature": 1,
+      "topP": 1,
+      "seed": null,
+      "stop": [],
+      "functions": [],
+      "responseFormat": {
+        "type": "text"
+      },
+      "parallelToolCalls": true,
+      "modalities": [
+        "text"
+      ],
+      "audio": {
+        "voice": "alloy",
+        "format": "pcm16"
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\"Fluidly stream large external response chunks\" Breaks Token Usage Display in Statistical Chat #6986 opened 12 hours ago by fl0w1nd model advancd setting can't take effect #6985 opened 12 hours ago by maru7777 Bug: model search not returning expected results #6979 opened yesterday by willdady dev: actions are broken in latest version #6976 opened yesterday by gjgd 4 of 5 tasks 2 issue: rich text input #6973 opened yesterday by bgeneto 3 of 5 tasks enh: use pydantic fields for param descriptions in tools #6962 opened 2 days ago by tjbck enh: better web search #6959 opened 2 days ago by tjbck Removing Silence from Audio Files for Local OpenAI/Whisper Models to Prevent Hallucinations #6953 opened 2 days ago by AliveDedSec enh: Provide language to OpenAI STT API #6926 opened 3 days ago by mike-stewart [dev-branch] whitelisted models migration failed #6914 opened 3 days ago by lucyknada 4 of 5 tasks 1 enh: support Markdown or HTML formatting in interface banners #6908 opened 3 days ago by Xtrah enh: image compression #6848 opened last week by utopeadia @tjbck 1 enh: marker integration for better pdf parsing #6844 opened last week by tjbck @tjbck 2 enh: manual model list for almost-OpenAI-compatible providers #6821 opened last week by rndmcnlly 1 @tjbck 3 issue: llama3.2 vision second image not being processed #6818 opened last week by danielj23 2 tasks 7 enh: support external image urls in chat completion requests #6816 opened last week by quanliew28 2 tasks 1 MODEL_FILTER_LIST not working as expected #6781 opened last week by FuzzyStatic 3 of 5 tasks 4 feat: New admin setting to display or hide citations in chat messages #6767 opened last week by DiegoRodriguez83 2 enh: open webui built-in usage tracking/limit #6692 opened 2 weeks ago by TheMatzy v0.5.0 feat: folder-based context #6671 opened 2 weeks ago by filiptrplan issue/enh: incorrect input markdown #6580 opened 3 weeks ago by HeyThisWasRandomlyMade 2 tasks 1 enh: open-webui:slim docker image core enhancement good first issue help wanted #6378 opened 3 weeks ago by tjbck enh: pip open-webui[min] installation #6369 opened 3 weeks ago by AntonKrug feat: include webui userId in completions request enhancement good first issue #6364 opened 3 weeks ago by sam-trost 1 enh: Notification and Handling for Failed Embeddings #6311 opened last month by bgeneto"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "简报：\n\n1）新增功能：\n- 提供语言支持到OpenAI STT API #6926\n- 提供基于文件夹的上下文 #6671\n- 新的管理员设置，显示或隐藏聊天消息中的引用 #6767\n\n2）主要改进：\n- 使用pydantic字段作为工具中参数描述的功能 #6962\n- 改进网络搜索功能 #6959\n- 清除音频文件中的沉默，以防止幻觉 #6953\n- 图像压缩 #6848\n\n3）修复问题：\n- 模型搜索未返回预期结果的问题 #6979\n- 动作在最新版本中无法正常工作的问题 #6976\n- 富文本输入问题 #6973\n- 模型高级设置无法生效的问题 #6985\n- 在统计聊天中打破令牌使用显示的问题 #6986"
+          }
+        ]
+      }
+    ]
+  }
+]
