@@ -1,6 +1,6 @@
 {
     "github": {
-        "token": "your_github_token",
+        "token": "your token",
         "subscriptions_file": "subscriptions.json",
         "progress_frequency_days": 1,
         "progress_execution_time": "08:00"
@@ -8,15 +8,15 @@
     "email": {
         "smtp_server": "smtp",
         "smtp_port": 465,
-        "from": "account",
-        "password": "passord",
-        "to": "account"
+        "from": "from",
+        "password": "password",
+        "to": "to"
     },
     "llm": {
         "model_type": "ollama",
         "openai_model_name": "gpt-4o-mini",
         "ollama_model_name": "llama3.2",
-        "ollama_api_url": "http://192.168.22.6:11434/api/chat",
+        "ollama_api_url": "http://172.24.127.95:11434/api/chat",
         "openai_models": [
             "gpt-3.5-turbo",
             "gpt-4o-mini",

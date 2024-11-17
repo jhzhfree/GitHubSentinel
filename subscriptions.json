@@ -1,4 +1,8 @@
 [
+    "ollama/ollama",
     "vllm-project/vllm",
-    "ollama/ollama"
+    "langchain-ai/langchain",
+    "openresty/openresty",
+    "open-webui/open-webui",
+    "open-webui/docs"
 ]
